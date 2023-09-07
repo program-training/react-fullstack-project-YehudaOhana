@@ -7,7 +7,8 @@ export interface TypeTrip {
   image: string;
 }
 
-export interface OpenCard {
+export interface TypeFullTrip {
+  key: string;
   id: string;
   name: string;
   destination: string;

@@ -3,12 +3,12 @@ import { PageContext } from "../App";
 type Props = {};
 
 export default function UserRegistration({}: Props) {
-  const context = useContext(PageContext);
-  if (context)
+  const pageContext = useContext(PageContext);
+  if (pageContext)
     return (
       <div>
         <h1>welcome to User Registration</h1>
-        <button onClick={() => context.setPage("Home")}>Home</button>
+        <button onClick={() => pageContext.setPage("Home")}>Home</button>
       </div>
     );
 }

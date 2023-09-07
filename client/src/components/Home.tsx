@@ -3,16 +3,16 @@ import { PageContext } from "../App";
 type Props = {};
 
 export default function Home({}: Props) {
-  const context = useContext(PageContext);
-  if (context)
+  const pageContext = useContext(PageContext);
+  if (pageContext)
     return (
       <div>
         <h1>welcome to Home</h1>
-        <button onClick={() => context.setPage("Trips")}>All Trips</button>
-        <button onClick={() => context.setPage("UserRegistration")}>
+        <button onClick={() => pageContext.setPage("Trips")}>All Trips</button>
+        <button onClick={() => pageContext.setPage("UserRegistration")}>
           Registration
         </button>
-        <button onClick={() => context.setPage("UserLogin")}>log in</button>
+        <button onClick={() => pageContext.setPage("UserLogin")}>log in</button>
       </div>
     );
 }
